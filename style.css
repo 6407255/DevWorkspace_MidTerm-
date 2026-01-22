@@ -1,0 +1,117 @@
+/* BACKGROUND */
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle at top, #0d3b66, #081f33);
+  color: #333;
+}
+
+/* MAIN CARD */
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  background: #ffffff;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+/* SECTIONS */
+.section {
+  margin-bottom: 30px;
+}
+
+/* HEADINGS */
+h1 {
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+h2 {
+  color: #1f6fb2;
+  margin-bottom: 15px;
+}
+
+/* AVATAR */
+.avatar {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 25px auto;
+  border-radius: 50%;
+  border: 3px solid #1f6fb2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* RS TEXT */
+.avatar-text {
+  position: absolute;
+  font-size: 36px;
+  font-weight: bold;
+  color: #1f6fb2;
+}
+
+/* PROFILE IMAGE */
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+/* CLICK ME BUTTON */
+#clickMeBtn {
+  padding: 10px 25px;
+  font-size: 16px;
+  background-color: #1f6fb2; /* main blue color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;      /* space above button */
+  margin-bottom: 30px;   /* space below button (1–2 lines) */
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+#clickMeBtn:hover {
+  background-color: #0d3b66; /* darker blue on hover */
+  transform: scale(1.05);
+}
+
+/* SKILLS LIST */
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li {
+  margin: 8px 0;
+  font-weight: 500;
+}
+
+.skills-list li::before {
+  content: "✔ ";
+  color: #1f6fb2;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+  .container {
+    margin: 20px;
+    padding: 25px 15px;
+  }
+}
