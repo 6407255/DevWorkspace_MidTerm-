@@ -19,3 +19,4 @@ document.addEventListener('DOMContentLoaded', () => {
     alert("Thanks for visiting my portfolio!");
   });
 });
+# update hidden message.
